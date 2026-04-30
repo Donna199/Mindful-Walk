@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It Only Takes A Second — Mindful Walking</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+
+<nav>
+  <div class="nav-logo">MINDFUL<span>.</span>WALK</div>
+  <ul class="nav-links">
+    <li><a href="#video-section">The Reality</a></li>
+    <li><a href="#data-section">Data</a></li>
+    <li><a href="#audio-section">Experience</a></li>
+    <li><a href="#solution-section">Our Solution</a></li>
+    <li><a href="#about-section">About Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-video-bg"></div>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-tag">Public Safety Campaign</div>
+      <h1 class="hero-title">
+        IT ONLY<br>
+        TAKES A<br>
+        <span class="accent">SECOND.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Using your phone while walking can change everything. In a moment, a glance at your screen can cost more than you think.
+      </p>
+      <div>
+        <a href="#video-section" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><polygon points="3,1 13,7 3,13"/></svg>
+          Watch What Happens
+        </a>
+        <a href="#data-section" class="btn-ghost">See the Data</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-stat-card danger">
+        <div class="hero-stat-number">2,500+</div>
+        <div class="hero-stat-label">Pedestrian deaths linked to distracted walking in 2021</div>
+      </div>
+      <div class="hero-stat-card">
+        <div class="hero-stat-number">13,264</div>
+        <div class="hero-stat-label">Injuries recorded from phone use while walking (2000–2023)</div>
+      </div>
+      <div class="hero-stat-card danger">
+        <div class="hero-stat-number">64.4%</div>
+        <div class="hero-stat-label">Were texting or looking at their screen at the time of injury</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video-section">
+  <div class="section-label">Section 01 — The Story</div>
+  <h2 class="section-title reveal">THIS IS WHAT<br>DISTRACTION<br>LOOKS LIKE.</h2>
+  <p class="section-desc reveal">A moment of inattention. A split-second choice. Watch how quickly everything can change.</p>
+  <div class="video-wrapper reveal">
+    <video id="storyVideo" class="story-video" controls muted playsinline preload="metadata">
+        <source src="Media/FinalCut.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+<!-- DATA -->
+<section id="data-section">
+  <div class="data-inner">
+    <div class="section-label">Section 02 — By the Numbers</div>
+    <h2 class="section-title reveal">THE NUMBERS<br>DON'T LIE.</h2>
+    <p class="section-desc reveal">Real statistics from real incidents. This isn't abstract — it's happening every day.</p>
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <span class="stat-icon">⚠</span>
+        <span class="stat-number" data-target="13264">0</span>
+        <p class="stat-text">Injuries caused by phone use while walking between 2000 and 2023 — a number that keeps rising.</p>
+        <a href="https://lermagazine.com/article/cell-phone-related-lower-extremity-injuries-while-walking#:~:text=Results:%20An%20estimated%2013%2C264%20cell,the%20majority%20involved%20a%20fall." target="_blank" class="stat-source">Source: Lower Extremity Review</a>
+      </div>
+      <div class="stat-card reveal reveal-delay-1">
+        <span class="stat-icon">📱</span>
+        <span class="stat-number" data-target="64" data-suffix=".4%">0%</span>
+        <p class="stat-text">Of injured pedestrians were actively texting or looking at their phones in the moment of impact.</p>
+        <a href="https://lermagazine.com/article/cell-phone-related-lower-extremity-injuries-while-walking#:~:text=Results:%20An%20estimated%2013%2C264%20cell,the%20majority%20involved%20a%20fall." target="_blank" class="stat-source">Source: Lower Extremity Review</a>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <span class="stat-icon">🚶</span>
+        <span class="stat-number" data-target="2500" data-prefix="~">0</span>
+        <p class="stat-text">Pedestrian deaths attributed to distracted walking in 2021 alone — a preventable crisis.</p>
+        <a href="https://www.1call.ms/blog/the-rise-of-distracted-walking-accidents/" target="_blank" class="stat-source">Source: National Safety Council</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIO -->
+<section id="audio-section">
+  <div class="section-label">Section 03 — Experience It</div>
+  <h2 class="section-title reveal">WHAT YOU<br>CHOOSE TO MISS.</h2>
+  <p class="section-desc reveal">Put on your headphones. Press play on both. This is the choice you make every time you reach for your phone.</p>
+
+  <div class="audio-cards-grid reveal">
+
+    <!-- CARD A: PRESENT -->
+    <div class="audio-card present-card" id="cardPresent">
+      <div class="audio-card-header">
+        <span class="audio-card-tag present-tag">🌿 When You're Present</span>
+        <div class="audio-card-waveform" id="wavePresent">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <h3 class="audio-card-title">The World Around You</h3>
+      <p class="audio-card-desc">Birdsong, voices, and wind through leaves. The real world keeps moving around you.</p>
+      <ul class="audio-track-list">
+        <li class="audio-track" id="trackBirds" onclick="toggleTrack('birds')">
+          <div class="track-icon">🐦</div>
+          <div class="track-info"><span class="track-name">Bird Sound</span><span class="track-dur">audio file</span></div>
+          <div class="track-play-btn" id="btnBirds">▶</div>
+        </li>
+        <li class="audio-track" id="trackPeople" onclick="toggleTrack('people')">
+          <div class="track-icon">💬</div>
+          <div class="track-info"><span class="track-name">People Talking</span><span class="track-dur">audio file</span></div>
+          <div class="track-play-btn" id="btnPeople">▶</div>
+        </li>
+        <li class="audio-track" id="trackWind" onclick="toggleTrack('wind')">
+          <div class="track-icon">🌬</div>
+          <div class="track-info"><span class="track-name">Wind and Leaf</span><span class="track-dur">audio file</span></div>
+          <div class="track-play-btn" id="btnWind">▶</div>
+        </li>
+      </ul>
+      <button class="audio-master-btn present-btn" onclick="playAllPresent()" id="masterPresentBtn">▶ Play All Sounds</button>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="audio-vs">
+      <div class="vs-line"></div>
+      <div class="vs-badge">VS</div>
+      <div class="vs-line"></div>
+    </div>
+
+    <!-- CARD B: DISTRACTED -->
+    <div class="audio-card distracted-card" id="cardDistracted">
+      <div class="audio-card-header">
+        <span class="audio-card-tag distracted-tag">📱 When You're Distracted</span>
+        <div class="audio-card-waveform" id="waveDistract">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <h3 class="audio-card-title">What Your Phone Gives You</h3>
+      <p class="audio-card-desc">Message alerts, typing, and sudden warning sounds compete with the world around you.</p>
+      <ul class="audio-track-list">
+        <li class="audio-track" id="trackNotif" onclick="toggleTrack('notif')">
+          <div class="track-icon">🔔</div>
+          <div class="track-info"><span class="track-name">Message Notification</span><span class="track-dur">audio file</span></div>
+          <div class="track-play-btn" id="btnNotif">▶</div>
+        </li>
+        <li class="audio-track" id="trackTyping" onclick="toggleTrack('typing')">
+          <div class="track-icon">⌨️</div>
+          <div class="track-info"><span class="track-name">Typing Sound</span><span class="track-dur">audio file</span></div>
+          <div class="track-play-btn" id="btnTyping">▶</div>
+        </li>
+        <li class="audio-track" id="trackHorn" onclick="toggleTrack('horn')">
+          <div class="track-icon">⚠️</div>
+          <div class="track-info"><span class="track-name">Car Horn</span><span class="track-dur">audio file</span></div>
+          <div class="track-play-btn" id="btnHorn">▶</div>
+        </li>
+      </ul>
+      <button class="audio-master-btn distracted-btn" onclick="playAllDistracted()" id="masterDistractBtn">▶ Play All Sounds</button>
+    </div>
+
+  </div>
+
+  <div class="audio-reveal-msg" id="audioRevealMsg">
+    <div class="audio-reveal-inner">
+      <div class="audio-reveal-icon">👂</div>
+      <p class="audio-reveal-text">Notice the difference? <strong>The world is still happening</strong> — you're just choosing not to hear it.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- SOLUTION -->
+<section id="solution-section">
+  <div class="section-label">Section 05 — Our Solution</div>
+  <h2 class="section-title reveal">SAFE WALKING<br>FOCUS MODE<br><span class="accent-text">FOR IPHONE.</span></h2>
+  <p class="section-desc reveal">A new iPhone Focus Mode that reduces distractions while walking, limits access to only the apps you choose, and protects your attention at crossings.</p>
+  <div class="solution-grid">
+    <div class="solution-card reveal">
+      <div class="solution-number">01</div>
+      <div class="solution-icon-wrap">📱</div>
+      <div class="solution-screen-slot">
+        <video id="solutionVideo" controls muted playsinline preload="metadata">
+          <source src="Media/Customization.mp4" type="video/mp4">
+          Your browser does not support this video.
+        </video>
+      </div>
+      <h3>Choose What Stays Open</h3>
+      <p>During setup, users choose which apps are available in Safe Walking mode and which people or apps can send notifications.</p>
+      <div class="solution-features">
+        <div class="solution-feature">Custom allowed app list</div>
+        <div class="solution-feature">Priority contacts and apps only</div>
+        <div class="solution-feature">Other alerts saved in Notification Center</div>
+      </div>
+    </div>
+    <div class="solution-card reveal reveal-delay-1">
+      <div class="solution-number">02</div>
+      <div class="solution-icon-wrap">🚶</div>
+      <div class="solution-screen-slot">
+        <img src="Media/Walking on.png" alt="Safe Walking active screen">
+      </div>
+      <h3>Turns On Automatically</h3>
+      <p>After setup, the phone uses GPS to detect when the user is walking outside and automatically activates Safe Walking mode.</p>
+      <div class="solution-features">
+        <div class="solution-feature">GPS-based outdoor walking detection</div>
+        <div class="solution-feature">Starts without extra taps</div>
+        <div class="solution-feature">Keeps essential tools available</div>
+      </div>
+    </div>
+    <div class="solution-card reveal reveal-delay-2">
+      <div class="solution-number">03</div>
+      <div class="solution-icon-wrap">🚦</div>
+      <div class="solution-screen-slot">
+        <img src="Media/Music stop.png" alt="Safe Walking crossing screen">
+      </div>
+      <h3>Protects Crossings</h3>
+      <p>When the user is near an intersection or crossing the road, background apps like music pause until the crossing is complete.</p>
+      <div class="solution-features">
+        <div class="solution-feature">Detects intersections and crosswalks</div>
+        <div class="solution-feature">Pauses background audio and media</div>
+        <div class="solution-feature">Resumes after the road is crossed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about-section">
+  <div class="about-inner">
+    <div class="section-label">About Us</div>
+    <h2 class="section-title reveal">DESIGNED BY<br>PURDUE UX<br><span class="accent-text">STUDENTS.</span></h2>
+    <p class="section-desc reveal">
+      We are UX Design students at Purdue University exploring how thoughtful design can improve pedestrian safety. Our goal is to bring attention to the everyday reality of distracted walking and create a solution that helps people stay aware, present, and safer while moving through the world.
+    </p>
+
+    <div class="team-polaroids reveal">
+      <div class="polaroid-card">
+        <div class="polaroid-photo">
+          <img src="Media/Donna.jpg" alt="Donna Le">
+          <span>DL</span>
+        </div>
+        <h3>Donna Le</h3>
+      </div>
+
+      <div class="polaroid-card">
+        <div class="polaroid-photo">
+          <img src="Media/Chanseo.png" alt="Chanseo Shin">
+          <span>CS</span>
+        </div>
+        <h3>Chanseo Shin</h3>
+      </div>
+
+      <div class="polaroid-card">
+        <div class="polaroid-photo">
+          <img src="Media/Allison.jpeg" alt="Allison Mau">
+          <span>AM</span>
+        </div>
+        <h3>Allison Mau</h3>
+      </div>
+
+      <div class="polaroid-card">
+        <div class="polaroid-photo">
+          <img src="Media/Stephanie.jpeg" alt="Stephanie Deuschle">
+          <span>SD</span>
+        </div>
+        <h3>Stephanie Deuschle</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">MINDFUL<span>.</span>WALK</div>
+  <div style="font-size:0.75rem; color:#444;">© 2026 Mindful Walking Campaign</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
